@@ -27,7 +27,7 @@ Los campos que deseamos añadir son:
 <html lang="es">
 <head>
   <meta charset="utf-8"/>
-  <title>Formulario</title>
+  <title>Formulario Médico</title>
   <link rel="stylesheet" type="text/css" href="form-estilo.css"> 
   <link rel="stylesheet" type="text/css" href="form-estilo-colores.css"> 
 </head>
@@ -46,160 +46,185 @@ Los campos que deseamos añadir son:
 			action="form-resul.html">
 		
 		<div class="form_description">
-			<h2>Título del Form</h2>
-			<p>Descripción del formulario.</p>
+			<h2>Formulario Médico</h2>
+			<p>Rellene este formulario para solicitar una cita.</p>
 		</div>						
 
-		<!-- TEXTO -->
+		<!-- Nombre -->
 		<div class="caja">
 			<div class="caja-label">
-				<label for="idTexto1">Texto </label>
+				<label for="idNombre">Nombre Completo </label>
 			</div>
 			
-			<div class="caja-input">
+			<div class="caja-input"  style="width: 250px;">
 				<input 
-					id="idTexto1" 
-					name="nTexto1"
-					
-						type="text" 
-						maxlength="255" 
-						value=""
+					id="idNombre" 
+					name="NombreCompleto"
+					type="text" 
+					maxlength="50" 
+					value=""
 					/> 
 			</div>
 		</div> 
 
-		<!-- PASSWORD -->
+		<!-- NÚMERO -->
 		<div class="caja">
 			<div class="caja-label">
-				<label for="idTexto2">Contraseña </label>
+				<label for="idNumero">Número de teléfono </label>
 			</div>
 			
-			<div class="caja-input">
+			<div class="caja-input"  style="width: 80px;">
 				<input 
-					id="idTexto2" 
-					name="nTexto2"
-					
-						type="password" 
-						maxlength="20" 
-						value=""
+					id="idNumero" 
+					name="NumeroTelefono"
+					type="text" 
+					maxlength="9"
+					value=""
 					/> 
 			</div>
-		</div> 		
+		</div> 
 
-		<!-- FICHERO -->
+		<!-- TEXTO -->
 		<div class="caja">
 			<div class="caja-label">
-				<label for="idTexto3">Fichero </label>
+				<label for="idNombre">Nombre Completo </label>
 			</div>
 			
-			<div class="caja-input">
+			<div class="caja-input"  style="width: 250px;">
 				<input 
-					id="idFile" 
-					name="nFile"
-					
-						type="file" 
-						maxlength="20" 
-						value=""
+					id="idNombre" 
+					name="NombreCompleto"
+					type="text" 
+					maxlength="50" 
+					value=""
 					/> 
 			</div>
-		</div> 	
-		
+		</div> 
+
+		<!-- EMAIL -->
+		<div class="caja">
+			<div class="caja-label">
+				<label for="idEmail">Email </label>
+			</div>
+			
+			<div class="caja-input"  style="width: 250px;">
+				<input 
+					id="idEmail" 
+					name="Email"
+					type="text" 
+					maxlength="70"
+					value=""
+					/> 
+			</div>
+		</div> 
+
 		<!-- FECHA -->
 		<div class="caja">
 			<div class="caja-label">
-				<label for="idTexto4">Fecha </label>
+				<label for="idFecha">Fecha </label>
 			</div>
 			
 			<div class="caja-input">
 				<input 
 					id="idFecha" 
 					name="nFecha"
-					
-						type="date" 
-						maxlength="10" 
-						value=""
+					type="date" 
+					maxlength="10" 
+					value=""
 					/> 
 			</div>
-		</div> 			
-		
-		<!-- ÁREA TEXTO -->
-		<div class="caja" >
-			<div class="caja-label-textarea">
-				<label for="idAreaTexto">Área Texto </label>
-			</div>
-			
-			<div class="caja-input-textarea">
-				<textarea 
-					id="idAreaTexto" 
-					name="nAreaTexto"
-					
-						rows="5" 
-					></textarea> 
-			</div>
-		</div> 
-		
-	
-		<!-- BOTONES RADIO -->
-		<div class="caja" >
+		</div> 		
+
+		<!-- FECHA -->
+		<div class="caja">
 			<div class="caja-label">
-				<label for="idRadio1">Botones Radio</label>
+				<label for="idHora">Hora </label>
 			</div>
 			
 			<div class="caja-input">
 				<input 
-					id="idRadio1" 
-					name="nRadio"
-						type="radio" 
-						value="1"
+					id="idHora" 
+					name="Hora"
+					type="time" 
+					maxlength="5" 
+					value=""
 					/> 
-				<label for="idRadio1">SI</label>
-				<input 
-					id="idRadio2" 
-					name="nRadio"
-						type="radio" 
-						value="2"
-					/> 
-				<label for="idRadio2">NO</label>
-								
 			</div>
-		</div> 
+		</div> 		
 
-		<!-- BOTÓN CHECK -->
-		<div class="caja" >
-			<div class="caja-label">
-				<label for="idCheck">Botón Check</label>
-			</div>
-			
-			<div class="caja-input">
-				<input 
-					id="idCheck" 
-					name="nCheck"
-						type="checkbox" 
-						value="on"
-					/> 
-			</div>
-		</div> 
-
-		
 		<!-- SELECT -->
 		<div class="caja" >
 			<div class="caja-label">
-				<label for="idSelect">Selección</label>
+				<label for="idEsp">Especialidad</label>
 			</div>
 			
 			<div class="caja-input">
 				<select 
-					id="idSelect" 
-					name="nSelect"> 
-					<option value="1">UNO</option>
-					<option value="2">DOS</option>
-					<option value="3">TRES</option>
-					<option value="4">CUATRO</option>
-					<option value="5">CINCO</option>
+					id="idEsp" 
+					name="Especialidad"> 
+					<option value="Alergología">Alergología</option>
+					<option value="Cardiología">Cardiología</option>
+					<option value="Dermatología">Dermatología</option>
+					<option value="Digestivo">Digestivo</option>
+					<option value="Neurología">Neurología</option>
+					<option value="Oftalmología">Oftalmología</option>
 				</select>
 			</div>
 		</div> 		
+
+
+
+		<!-- MOTIVO -->
+		<div class="caja" >
+			<div class="caja-label-textarea">
+				<label for="idMotivo">Motivo </label>
+			</div>
+			
+			<div class="caja-input-textarea">
+				<textarea 
+					id="idMotivo" 
+					name="Motivo"
+					
+						rows="6" 
+					></textarea> 
+			</div>
+		</div> 
 		
+
+
+		
+		<!-- CONTACTO -->
+		<div class="caja" >
+			<div class="caja-label">
+				<label for="idRadio1">Contacto</label>
+			</div>
+			
+			<div class="caja-input">
+				<input 
+					id="idContacto" 
+					name="Contacto"
+						type="radio" 
+						value="1"
+					/> 
+				<label for="idRadio1">Whatsapp</label>
+				<input 
+					id="idContacto2" 
+					name="Contacto"
+						type="radio" 
+						value="2"
+					/> 
+				<label for="idRadio2">SMS</label>
+				<input 
+					id="idContacto3"  	
+					name="Contacto"
+						type="radio" 
+						value="2"
+					/> 
+				<label for="idRadio3">Email</label>
+								
+			</div>
+		</div> 
+
 		<!-- BOTÓN GRABAR -->
 		<div class="caja-botonera">
 			<input 
@@ -212,6 +237,8 @@ Los campos que deseamos añadir son:
 	  </form>	
 	</div>
 </div>
+
+
 
 <!-- FIN DE TU CÓDIGO HTML  -->
 </body>
