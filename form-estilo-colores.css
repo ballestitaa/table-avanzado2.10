@@ -1,0 +1,41 @@
+/* CONTENEDORES DEL FORMULARIO */
+	.formulario {
+		border-color:black;
+		background-color:#a18276;
+	}
+	
+/* CONTENEDORES DE ETIQUETAS Y CAMPOS */
+	.caja {
+		border-color:#dddddd;
+		background-color: #dac6b5;
+	}
+	
+	.caja:hover {
+		background-color: #f1d6b8;
+	}	
+	
+/* ESTILO DE ETIQUETAS DE CAMPOS */
+
+	input,
+	textarea,
+	select {
+		background-color: white;
+	}
+	
+	input:focus,
+	textarea:focus,
+	select:focus {
+		background-color: #efcd99;
+	}
+	
+	input[type=submit] {
+		border-color:#dddddd;
+		background-color: #aaaaaa;
+		color:black;
+	}
+	input[type=submit]:hover {
+		background-color: black;
+		color:white;
+	}
+	
+
